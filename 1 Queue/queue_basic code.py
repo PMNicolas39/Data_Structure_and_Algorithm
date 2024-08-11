@@ -10,7 +10,7 @@ class Queue:
 
     def dequeue(self):
         if self.is_empty():
-            print("Queue is empty")
+            print("1 Queue is empty")
         else:
             return self.buffer.pop()
 

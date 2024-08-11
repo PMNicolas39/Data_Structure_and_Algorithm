@@ -14,7 +14,7 @@ class Queue:
     # Pop the order out the queue
     def dequeue(self):
         if len(self.buffer) == 0:
-            print("Queue is empty")
+            print("1 Queue is empty")
             return
         return self.buffer.pop()
 
