@@ -1,35 +1,42 @@
 # Initializing a node
 class Node:
-    def __init__(self, data=None, next=None, prev=None):
+    def __init__(self, data=None, next=None):
         self.data = data  # assign given data to the node
         self.next = next  # Initialize the next attribute to null
-        self.prev = prev  # Initialize the previous attribute to null
 
 
-# Creating a double linked list class, empty linked list and no nodes in this list to point. Will add nodes by inserting new nodes.
-class Double_Linked_list:
+# Creating a linked list class, empty linked list and no nodes in this list to point. Will add nodes by inserting new nodes.
+class Linked_list:
     def __init__(self):
         self.head = None
 
+    def insert_at_beginning(self, data):
+        # create new node
+        new_node = Node(data)
+        # initialize next to head
+        new_node.next = self.head
+        # initialize head to node
+        self.head = new_node
 
     def print_LL(self):
         if self.head is None:
             print("linked list is empty")
-        temp = self.head  # start from the head of the list
-        while temp is not None:
-            print(temp.data, end=" ")  # print data in the current mode
-            temp = temp.next  # move to the next node
-        print()  # Ensure the output is followed by a new line
+        else:
+            temp = self.head  # start from the head of the list
+            while temp is not None:
+                print(temp.data, end=" ")  # print data in the current mode
+                temp = temp.next  # move to the next node
+            print()  # Ensure the output is followed by a new line
 
     def insert_at_end(self, data):
-        new_node = Node(data, None, None)
+        new_node = Node(data)
         if self.head is None:
             self.head = new_node  # if the list is empty, make a new node
             return
-        temp = self.head
-        while temp.next:
-            temp = temp.next
-        temp.next = Node(data, None, temp)  # make  the new node to the next node of last node
+        last = self.head
+        while last.next:
+            last = last.next
+        last.next = new_node  # make  the new node to the next node of last node
 
     def delete_at_beginning(self):
         if self.head is None:
@@ -98,82 +105,28 @@ class Double_Linked_list:
                 break
             temp = temp.next
 
-    def print_forward(self):
-        # this method prints list in forward direction. Use node.next
-        if self.head is None:
-            print("Linkedlist is empty")
-            return
-        temp = self.head
-        while temp:
-            print(temp.data, end=" ")
-            temp = temp.next
-        print()
-
-    def print_backward(self):
-        if self.head is None:
-            print("Linkedlist is empty")
-            return
-        last_node = self.get_last_node()
-        temp = last_node
-        while temp:
-            print(temp.data, end=" ")
-            temp = temp.prev
-        print()
-
-    def get_last_node(self):
-        temp = self.head
-        while temp.next is not None:
-            temp = temp.next
-        return temp
 
 
-"""
-class Node:
-    def __init__(self, data=None, next=None, prev=None):
-        self.data = data
-        self.next = next
-        self.prev = prev
+"""if __name__ == '__main__':
+  #create a new linkedlist
+  llist = Linkedlist()
+  #insert each letter at the beginning using the method we created
+  llist.insert_at_beginning('fox')
+  llist.insert_at_beginning('brown')
+  llist.insert_at_beginning('quick')
+  llist.insert_at_beginning('the')
+  llist.insert_at_end('lazy')
 
-class DoublyLinkedList:
-    def __init__(self):
-        self.head = None
+  #print the list before deletion
+  print("Before deletion:")
+  llist.print_LL()
 
-    def print_forward(self):
-        if self.head is None:
-            print("Linked list is empty")
-            return
+  #print the list after deletion
+  llist.delete_at_beginning()
+  llist.delete_from_end()
+  print("After deletion: ")
+  llist.print_LL()
 
-        itr = self.head
-        llstr = ''
-        while itr:
-            llstr += str(itr.data) + ' --> '
-            itr = itr.next
-        print(llstr)
-
-    def print_backward(self):
-        if self.head is None:
-            print("Linked list is empty")
-            return
-
-        last_node = self.get_last_node()
-        itr = last_node
-        llstr = ''
-        while itr:
-            llstr += itr.data + '-->'
-            itr = itr.prev
-        print("Link list in reverse: ", llstr)
-
-    def get_last_node(self):
-        itr = self.head
-        while itr.next:
-            itr = itr.next
-
-        return itr
-
- 
-
-if __name__ == '__main__':
-    ll = DoublyLinkedList()
-    ll.insert_values(["banana","mango","grapes","orange"])
-    ll.print_forward()
-    ll.print_backward()"""
+  #search "quick" and "lazy" in the list
+  llist.search_item("quick")
+  llist.search_item("lazy")"""
