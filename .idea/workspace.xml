@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6803f62-50a9-4da0-9702-3cd34ab9de7d" name="Changes" comment="Initial">
-      <change afterPath="$PROJECT_DIR$/3 Linked List/Ex1/Example 1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3 Linked List/Linked_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Data_Structure_and_Algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Data_Structure_and_Algorithm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3 Linked List/Ex 2/example 2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3 Linked List/Linked_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/3 Linked List/Ex 2/Linked_list.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,14 +23,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "PMNicolas39"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;PMNicolas39&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/PMNicolas39/Data_Structure_and_Algorithm.git&quot;,
@@ -58,19 +55,48 @@
     "Python.Food_order.executor": "Run",
     "Python.Linked_list.executor": "Run",
     "Python.Multithreading.executor": "Run",
+    "Python.example 2.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/3. Work/13. Python/Data_Structure_and_Algorithm/3 Linked List"
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/3. Work/13. Python/Data_Structure_and_Algorithm/3 Linked List/Ex 2",
+    "settings.editor.selected.configurable": "preferences.general"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\3. Work\13. Python\Data_Structure_and_Algorithm\3 Linked List\Ex 2" />
       <recent name="D:\3. Work\13. Python\Data_Structure_and_Algorithm\3 Linked List" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\3. Work\13. Python\Data_Structure_and_Algorithm\3 Linked List" />
       <recent name="D:\3. Work\13. Python\Data_Structure_and_Algorithm\3 Linked List\Ex1" />
+      <recent name="D:\3. Work\13. Python\Data_Structure_and_Algorithm\3 Linked List" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Data_Structure_and_Algorithm" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -96,7 +122,31 @@
       <option name="project" value="LOCAL" />
       <updated>1723367814882</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial">
+      <option name="closed" value="true" />
+      <created>1723904922605</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723904922605</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Initial">
+      <option name="closed" value="true" />
+      <created>1723905211946</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1723905211946</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Initial">
+      <option name="closed" value="true" />
+      <created>1723905541390</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1723905541390</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
